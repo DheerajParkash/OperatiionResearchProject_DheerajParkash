@@ -12,17 +12,17 @@ This project aims to solve the Maximum Flow Minimum Cost problem for a graph, gi
 
 ## Project Structure
 ### edge.py
-    This file defines the edge classes used in the graph representation:
-        * AdjNode: Represents a basic directed edge with capacity and cost.
-        * AdjFlow: Extends AdjNode to include flow information, essential for flow-related algorithms.
+#### This file defines the edge classes used in the graph representation:
+* AdjNode: Represents a basic directed edge with capacity and cost.
+* AdjFlow: Extends AdjNode to include flow information, essential for flow-related algorithms.
 
 ### graph.py
-    The Graph class encapsulates the graph structure and operations:
-        * Initialization: Constructs a graph from an adjacency list.
-        * Algorithms Implemented:
-            * Maximum Flow: Uses the Ford-Fulkerson method to find the maximum amount of flow from a source to a sink.
-            * Minimum Cut: Identifies edges that form the minimum cut separating the source from other nodes.
-            * Maximum Flow Minimum Cost: Computes the maximum flow with the minimum possible cost using the Bellman-Ford algorithm to find shortest paths in terms of cost.
+#### The Graph class encapsulates the graph structure and operations:
+* Initialization: Constructs a graph from an adjacency list.
+* Algorithms Implemented:
+    * Maximum Flow: Uses the Ford-Fulkerson method to find the maximum amount of flow from a source to a sink.
+    * Minimum Cut: Identifies edges that form the minimum cut separating the source from other nodes.
+    * Maximum Flow Minimum Cost: Computes the maximum flow with the minimum possible cost using the Bellman-Ford algorithm to find shortest paths in terms of cost.
 
 ### main.py
 #### This script serves as the entry point and demonstrates the functionalities of the implemented algorithms:
@@ -30,10 +30,12 @@ This project aims to solve the Maximum Flow Minimum Cost problem for a graph, gi
 * Execution: Executes each algorithm on the graph and prints results.
 * Output: Displays maximum flow values, flow distributions, minimum cut edges, and maximum flow minimum cost details.
 
+
 ### inputGraph.txt
-Sample input file containing the graph description in the specified format:
+#### Sample input file containing the graph description in the specified format:
 * Format: First line includes numNodes, numArcs, sourceNode, and sinkNode.
 * Subsequent lines describe each arc with emanatingNode, terminatingNode, maxCapacity, and cost.
+
 
 ## How to Use
 1. Setup: Ensure Python 3.x is installed on your system.
