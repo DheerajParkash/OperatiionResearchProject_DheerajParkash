@@ -25,15 +25,15 @@ This project aims to solve the Maximum Flow Minimum Cost problem for a graph, gi
             * Maximum Flow Minimum Cost: Computes the maximum flow with the minimum possible cost using the Bellman-Ford algorithm to find shortest paths in terms of cost.
 
 ### main.py
-    This script serves as the entry point and demonstrates the functionalities of the implemented algorithms:
-        * Parsing Input File: Reads the graph description from inputGraph.txt.
-        * Execution: Executes each algorithm on the graph and prints results.
-        * Output: Displays maximum flow values, flow distributions, minimum cut edges, and maximum flow minimum cost details.
+#### This script serves as the entry point and demonstrates the functionalities of the implemented algorithms:
+* Parsing Input File: Reads the graph description from inputGraph.txt.
+* Execution: Executes each algorithm on the graph and prints results.
+* Output: Displays maximum flow values, flow distributions, minimum cut edges, and maximum flow minimum cost details.
 
 ### inputGraph.txt
-    Sample input file containing the graph description in the specified format:
-        * Format: First line includes numNodes, numArcs, sourceNode, and sinkNode.
-        * Subsequent lines describe each arc with emanatingNode, terminatingNode, maxCapacity, and cost.
+Sample input file containing the graph description in the specified format:
+* Format: First line includes numNodes, numArcs, sourceNode, and sinkNode.
+* Subsequent lines describe each arc with emanatingNode, terminatingNode, maxCapacity, and cost.
 
 ## How to Use
 1. Setup: Ensure Python 3.x is installed on your system.
@@ -43,5 +43,6 @@ This project aims to solve the Maximum Flow Minimum Cost problem for a graph, gi
     * Navigate to the directory containing the cloned repository.
     * Execute python main.py to run the program.
     * Ensure inputGraph.txt is in the same directory or specify its path accordingly.
-Example Usage
+
+## Commands Usage
     python main.py
