@@ -2,6 +2,7 @@
 
 from graph import Graph
 from edge import AdjFlow
+import argparse as ap
 
 def parse_input_file(filename):
     with open(filename, 'r') as file:
@@ -13,8 +14,7 @@ def parse_input_file(filename):
         adjacence_list[u].append(AdjFlow(v, capacity, cost))
     return Graph(adjacence_list, num_nodes), source_node, sink_node
 
-def main():
-    filename = 'path_to_your_file.txt'  # Replace with your file path
+def main(filename):
     graph, source_node, sink_node = parse_input_file(filename)
     print("Original Graph:")
     print(graph)
@@ -35,4 +35,9 @@ def main():
     print("Flow Values:", flow_values)
 
 if __name__ == "__main__":
-    main()
+    p = ap.ArgumentParser()
+    p.add_argument("-igf", "--data", help="File Containing the Input Graph", type=str, required=True)
+    args = p.parse_args()
+    
+    main(args.data)
+
