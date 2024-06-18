@@ -47,4 +47,4 @@ This project aims to solve the Maximum Flow Minimum Cost problem for a graph, gi
     * Ensure inputGraph.txt is in the same directory or specify its path accordingly.
 
 ## Commands Usage
-    python ./Src/main.py -igf '../Data/input_graph1.txt'
+    python ./Src/main.py -igf './Data/input_graph1.txt'
